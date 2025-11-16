@@ -35,6 +35,11 @@ function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 md:py-3">
         {/* ✅ Logo */}
         <Link to="/" className="flex items-center gap-2">
+          <img
+            className="h-8 w-auto object-contain"
+            src="\src\assets\jjj.png"
+            alt="logo"
+          />
           <span className="text-2xl font-bold text-blue-700 tracking-tight">
             Task<span className="text-orange-500">Mitra</span>
           </span>
