@@ -1,5 +1,8 @@
 import { Users, Target, Briefcase } from "lucide-react";
 import solar from "./solar.jpg";
+import photo1 from "../assets/taskMitra-photo-1.jpg"
+import photo2 from "../assets/taskMitra-photo-2.jpg"
+import photo3 from "../assets/taskMitra-photo-3.jpg"
 
 function About() {
   return (
@@ -71,36 +74,78 @@ function About() {
         </section>
 
         {/* --- Core Team --- */}
-        <section className="text-center">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-8">
-            Meet Our Team
-          </h2>
+       {/* --- Core Team --- */}
+<section className="text-center">
+  <h2 className="text-2xl font-semibold text-gray-800 mb-8">
+    Meet Our Team
+  </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {/* Example team cards */}
-            <div className="bg-white shadow-md p-6 rounded-2xl">
-              <Users size={36} className="text-blue-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-800">Mr.Muktar Hussain</h3>
-              <p className="text-sm text-gray-500">
-                Managing Director
-              </p>
-            </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
-            <div className="bg-white shadow-md p-6 rounded-2xl">
-              <Users size={36} className="text-blue-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-800">Mustak Ahmed</h3>
-              <p className="text-sm text-gray-500">(Co-Founder)</p>
-            </div>
+    {/* Card 1 */}
+    <div className="bg-white shadow-md p-6 rounded-2xl">
+      <img
+        src={photo2}
+        alt="Mr. Muktar Hussain"
+        className="w-20 h-20 object-cover rounded-full mx-auto mb-3 shadow-md"
+      />
+      <h3 className="font-semibold text-gray-800">Mr. Muktar Hussain</h3>
+      <p className="text-sm text-gray-500 mb-2"> Director</p>
 
-            <div className="bg-white shadow-md p-6 rounded-2xl">
-              <Users size={36} className="text-blue-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-800">
-                Abdul Suruz
-              </h3>
-              <p className="text-sm text-gray-500">Project Head</p>
-            </div>
-          </div>
-        </section>
+      <p className="text-sm text-gray-700 italic">
+        “To guide TaskMitra Solutions towards sustainable growth by ensuring
+        transparency, strong relationships, and long-term stability for clients
+        and partners.”
+      </p>
+      <p className="text-xs text-gray-600 mt-2 font-medium">
+        Focus: Leadership • Strategy • Compliance • Growth
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-white shadow-md p-6 rounded-2xl">
+      <img
+        src={photo3}
+        alt="Mustak Ahmed"
+        className="w-20 h-20 object-cover rounded-full mx-auto mb-3 shadow-md"
+      />
+      <h3 className="font-semibold text-gray-800">Mostak Ahmed</h3>
+      <p className="text-sm text-gray-500 mb-2">(CEO)</p>
+
+      <p className="text-sm text-gray-700 italic">
+        “To expand TaskMitra into a reliable multi-service brand by bringing
+        innovation, quality service delivery, and customer-first operations in
+        every project.”
+      </p>
+      <p className="text-xs text-gray-600 mt-2 font-medium">
+        Focus: Expansion • Service Excellence • Operations
+      </p>
+    </div>
+
+    {/* Card 3 */}
+    <div className="bg-white shadow-md p-6 rounded-2xl">
+      <img
+        src={photo1}
+        alt="Abdul Suruz"
+        className="w-20 h-20 object-cover rounded-full mx-auto mb-3 shadow-md"
+      />
+      <h3 className="font-semibold text-gray-800">Abdul Suruz</h3>
+      <p className="text-sm text-gray-500 mb-2">Project Head</p>
+
+      <p className="text-sm text-gray-700 italic">
+        “To complete every project with precision, timely execution, and
+        technical excellence, ensuring customer satisfaction and maintaining our
+        company’s reputation.”
+      </p>
+      <p className="text-xs text-gray-600 mt-2 font-medium">
+        Focus: Project Quality • Timely Deliverables • Execution
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
       </div>
     </div>
   );
