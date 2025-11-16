@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
+import logo from "../../assets/jjj.png"
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +37,7 @@ function Header() {
         <Link to="/" className="flex items-center gap-2">
           <img
             className="h-8 w-auto object-contain"
-            src="\src\assets\jjj.png"
+            src={logo}
             alt="logo"
           />
           <span className="text-2xl font-bold text-blue-700 tracking-tight">
